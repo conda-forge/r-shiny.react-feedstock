@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-shiny.react-f
 
 Home: https://appsilon.github.io/shiny.react/, https://github.com/Appsilon/shiny.react
 
-Package license: LGPL-3.0-only
+Package license: LGPL-3.0-or-later
 
 Summary: A toolbox for defining React component wrappers which can be used seamlessly in Shiny apps.
 
