@@ -1,4 +1,4 @@
-{% set version = '0.3.0' %}
+{% set version = "0.4.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/shiny.react_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/shiny.react/shiny.react_{{ version }}.tar.gz
-  sha256: 507477cd7ff35f06df6c433d48320100c03f1fcc8311b2b4bc0c13d0c1149b68
+  sha256: ad2dab6e6038726062fc3d3d3a68cc4605dca622f9cc2f1b1932477e1defb384
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -33,6 +33,7 @@ requirements:
     - r-purrr
     - r-rlang
     - r-shiny
+    - r-stringi
   run:
     - r-base
     - r-glue
@@ -42,6 +43,7 @@ requirements:
     - r-purrr
     - r-rlang
     - r-shiny
+    - r-stringi
 
 test:
   commands:
@@ -50,9 +52,8 @@ test:
 
 about:
   home: https://appsilon.github.io/shiny.react/, https://github.com/Appsilon/shiny.react
-  license: LGPL-3.0-only
-  summary: A toolbox for defining React component wrappers which can be used seamlessly in Shiny
-    apps.
+  license: LGPL-3.0-or-later
+  summary: A toolbox for defining React component wrappers which can be used seamlessly in Shiny apps.
   license_family: LGPL
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/LGPL-3
