@@ -33,6 +33,7 @@ requirements:
     - r-purrr
     - r-rlang
     - r-shiny
+    - r-stringi
   run:
     - r-base
     - r-glue
@@ -42,6 +43,7 @@ requirements:
     - r-purrr
     - r-rlang
     - r-shiny
+    - r-stringi
 
 test:
   commands:
@@ -50,7 +52,7 @@ test:
 
 about:
   home: https://appsilon.github.io/shiny.react/, https://github.com/Appsilon/shiny.react
-  license: LGPL-3.0-only
+  license: LGPL-3.0-or-later
   summary: A toolbox for defining React component wrappers which can be used seamlessly in Shiny apps.
   license_family: LGPL
   license_file:
